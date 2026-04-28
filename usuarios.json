@@ -1,0 +1,10 @@
+[
+    {
+        "nome": "tester",
+        "email": "tester.tester@ufrpe.br",
+        "senha": "tester",
+        "esporte": "",
+        "modalidade": "Masculino",
+        "funcao": "Atleta"
+    }
+]
