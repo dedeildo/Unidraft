@@ -5,22 +5,27 @@ Um Sistema de peneiras para alunos da UFRPE com o intuito de facilitar a integra
 Sobre:
 O UniDraft tem como objetivo criar um sistema simples e acessível para que os discentes da instituição possam realizar atividades esportivas de seus interesses. Temos como objetivo criar um ambiente mais inclusivo e confortável para todos que desejam participar de tais práticas corporais.
 
-Funcionalidades:
--Criação de peneiras por organizadores
+Realiase 01:
 -Inscrição de atletas
--Perfil esportivo
--Registro de vínculo com times universitários
--Painel para os treinadores
--Suporte a acessibilidade e triagem presencial
+-Inscrição de Técnicos
+-Dados Salvos no JSON
+-Escolha de esporte
+
+Realiase 02:
+-Agendamento de seletivas
+-Visualizar histórico de seletiva
+-Upgrade na interface do projeto
+-aumento nas informações dos usuários
+
+Realisase 03:
+-Integração com banco dados
+-Tabela de seletivas próximas
+-Chat de integração entre técnico e atleta
 
 Tecnologias:
-Python-Utilizado majoritariamente na construção do projeto
-Json-Utilizado como banco de dados
-
-Melhorias futuras:
--Interface gráfica
--Avaliações técnicas dos treinadores
--Sistema de “Overall”
+Python - Utilizado majoritariamente na construção do projeto
+Json - Utilizado como banco de dados
+OS - Utilizado para manipular os arquivos
 
 
 Autores:
