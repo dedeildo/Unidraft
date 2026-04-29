@@ -10,6 +10,8 @@ Realiase 01:
 -Inscrição de Técnicos
 -Dados Salvos no JSON
 -Escolha de esporte
+Link dos Fluxogramas:
+https://drive.google.com/drive/folders/1YYMGkhwLl65XhJtNlqAWqun8Auixhd8L?usp=sharing
 
 Realiase 02:
 -Agendamento de seletivas
@@ -26,7 +28,6 @@ Tecnologias:
 Python - Utilizado majoritariamente na construção do projeto
 Json - Utilizado como banco de dados
 OS - Utilizado para manipular os arquivos
-
 
 Autores:
 Adeildo José e Davi Guaraná
