@@ -15,24 +15,40 @@ def salvar_esporte(email, esporte_nome):
     with open("usuarios.json", "w") as f:
         json.dump(usuarios, f, indent=4)
 
+def ver_esportes_marcados(email_usuario):
+
+    with open("usuarios.json", "r") as f:
+        usuarios = json.load(f)
+    
+    for usuario in usuarios:
+        if usuario["email"] == email_usuario:
+            esporte = usuario.get("esporte", "Nenhum esporte marcado")
+            print(f"\n{'_'*50}")
+            print(f"Esporte marcado: {esporte}")
+            print(f"{'_'*50}\n")
+            return
+    
+    print("Usuário não encontrado!")
+
 def menu_usuario(email_usuario):
-    print( "_" * 50 )
-    print("MENU\n")
-    print( "_" * 50 )
-    print("\n[1] Ver seletivas marcadas")
-    print("[2] Marcar seletiva\n")
-    print("[0] Sair")
-    escolha = input("Escolha uma opção: ")
-    if escolha == "1":
-        print("Seletivas marcadas:")
-        # Aqui você pode implementar a lógica para mostrar as seletivas marcadas pelo usuário
-    elif escolha == "2":
-        print("Marcar seletiva:") 
-        selecionar_esporte(email_usuario)
-    elif escolha == "0":
-        print("Saindo do menu. Até mais!")
-        main.main()
-    return escolha
+    while True:
+        print( "_" * 50 )
+        print("MENU\n")
+        print( "_" * 50 )
+        print("\n[1] Ver esportes marcados")
+        print("[2] Marcar esporte")
+        print("[0] Sair\n")
+        escolha = input("Escolha uma opção: ")
+        if escolha == "1":
+            ver_esportes_marcados(email_usuario)
+        elif escolha == "2":
+            print("\nMarcar esporte:") 
+            selecionar_esporte(email_usuario)
+        elif escolha == "0":
+            print("Saindo do menu. Até mais!")
+            break
+        else:
+            print("Opção inválida. Tente novamente.")
 
 ESPORTES_INDIVIDUAIS = {
     1: "Atletismo",
@@ -57,7 +73,7 @@ ESPORTES_COLETIVOS = {
 }
 
 def selecionar_esporte(email_usuario):
-    print("SELECIONE O ESPORTE")
+    print("\nSELECIONE O ESPORTE")
     print("[1] Esportes Individuais")
     print("[2] Esportes Coletivos")
     tipo = input("Escolha: ")

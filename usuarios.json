@@ -6,5 +6,13 @@
         "esporte": "",
         "modalidade": "Masculino",
         "funcao": "Atleta"
+    },
+    {
+        "nome": "kaua",
+        "email": "kaua.kaua@ufrpe.br",
+        "senha": "kaua12",
+        "esporte": "T\u00eanis de Mesa",
+        "modalidade": "Feminino",
+        "funcao": "Atleta"
     }
 ]

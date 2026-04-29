@@ -2,6 +2,8 @@ import json
 import os
 import re
 
+email_logado = None  # Variável global para armazenar o email do usuário logado
+
 def carregar_usuarios():
     if not os.path.exists("usuarios.json") or os.path.getsize("usuarios.json") == 0:
         return []
@@ -58,9 +60,9 @@ def fazer_login():
             if usuario["email"] == email and usuario["senha"] == senha:
                 print("\nLogin realizado com sucesso! Bem-vindo ao Unidraft!")
                 
-                # Importa esportes e chama o menu com o email do usuário
-                import esportes
-                esportes.menu_usuario(email)
+                # Armazena o email na variável global
+                global email_logado
+                email_logado = email
                 
                 return True
 
